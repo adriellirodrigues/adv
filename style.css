@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --primary-color: #720a0a;
+    --primary-color-hover: #520707;
+    --secundary-color: #cfb298;
+    --secundary-color-hover: #164931;
+    --third-color: #dcef17 ;
+    --main-color: #202024;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+ 
+
+body{
+    background: linear-gradient(#720a0a, #520707);
+    
+    /* background: linear-gradient(
+    to right bottom,
+    rgba(105, 9, 14, 0.884),
+    rgba(92, 7, 11, 0.966)) */
+    /* background: url('/assets/bg.png'); */
+    /* background-size: cover; */
+}
+.card {
+    /* position: fixed; */
+    background-color: white;
+    display: grid;
+    max-width: 50%;
+    margin: 4% auto 4% auto;
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: 2px 2px 16px rgba(0, 0, 0, .1);
+}
+
+.head-img img{
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 2%;
+}
+
+.infos .title {
+    width: 90%;
+    margin: 2% auto 0 auto;
+}
+
+.infos .title h1 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: var(--secundary-color);
+}
+
+.title h2 {
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-align: center;
+    color: var(--secundary-color);
+
+}
+
+.social-links {
+    margin: 0 auto;
+    display: block;
+
+    width: 100%;
+}
+
+.social-links ul {
+    text-decoration-style: none;
+
+}
+
+.social-links .link a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.social-links li {
+    cursor: pointer;
+    list-style-type: none;
+
+    text-align: center;
+    border-radius: 4px;
+    margin: 20px;
+    background-color: var(--primary-color);
+
+    padding: 16px;
+    transition: 0.4s;
+
+}
+
+.social-links a {
+    font-size: 18px;
+
+
+}
+
+
+.material-icons, .fa{
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: 700;
+    color: white;
+    vertical-align: bottom;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-flex;
+    margin-right: 8px;
+    width: 20px;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* color: white; */
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+
+
+.social-links li:hover{
+    background-color: var(--secundary-color);
+
+}
+
+footer {
+    width: 94%;
+    margin: 0 auto;
+}
+
+footer strong {
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--secundary-color);
+
+}
+
+footer p {
+    font-size: 9px;
+    font-weight: 400;
+    color: var(--secundary-color);
+    margin-top: 0.5%;
+
+}
+
+/* ========= MODAL OVERLAY - JINGLES ============  */
+
+.modal-overlay {
+    background-color: rgba(2, 20, 41, 0.76);
+    width: 100%;
+    height: 100%;
+    top:0;
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* ========= MODAL OVERLAY ACTIVE ============  */
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}    
+
+.modal {
+    background-color: #f4f4f4;
+    width: 60%;
+    height: 50%;
+    margin: 20vh auto;
+    position: relative;
+    padding: 4%;
+}
+
+.modal-overlay .modal .close-modal .material-icons{
+    color: var(--primary-color);
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+
+}
+.buttons {
+    margin: 0 auto;
+    display: block;
+
+    width: 100%;
+}
+
+.buttons ul {
+    text-decoration-style: none;
+
+}
+
+.buttons .link a {
+    text-decoration: none;
+    color: white;
+}
+
+.buttons li {
+    cursor: pointer;
+    list-style-type: none;
+
+    text-align: center;
+    border-radius: 4px;
+    margin: 20px;
+    background-color: var(--primary-color);
+
+    padding: 16px;
+    transition: 0.4s;
+}
+
+.buttons li:hover{
+    background-color: var(--secundary-color);
+}
+
+.buttons a {
+    font-size: 18px;
+}
